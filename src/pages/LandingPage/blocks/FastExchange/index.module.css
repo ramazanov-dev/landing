@@ -1,0 +1,104 @@
+.FastExchange {
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container > h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700 !important;
+  font-family: "Actay Wide", sans-serif !important;
+}
+
+.container > p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Positions */
+.positionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px
+}
+
+@media (max-width: 760px) {
+  .positionsContainer {
+    flex-direction: column;
+  }
+}
+
+.position {
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  flex: 1;
+  font-size: 28pt;
+  font-weight: 500;
+}
+
+@media (max-width: 760px) {
+  .position {
+    width: 100%;
+    max-width: 300px;
+    font-size: 22pt;
+  }
+}
+
+.positionsIcon {
+  width: 30px;
+}
+
+.positionsIcon > svg {
+  stroke: #000;
+}
+
+@media (max-width: 760px) {
+  .positionsIcon > svg {
+    transform: rotateZ(90deg)
+  }
+}
+
+.position > div {
+  padding: 10px 0;
+}
+
+.position > div:not(:first-child) {
+  border-top: 1px solid #000
+}
+
+/* Misc */
+.miscContainer {
+  display: flex;
+  margin-top: 15px;
+}
+
+@media (max-width: 760px) {
+  .miscContainer {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+
+.miscContainer > button {
+  margin-left: auto
+
+}
+
+@media (max-width: 760px) {
+  .miscContainer > button {
+    margin-left: unset;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}

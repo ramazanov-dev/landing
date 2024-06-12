@@ -1,0 +1,142 @@
+.App {
+  display: flex;
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  .App {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Main element */
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 30px;
+}
+
+.main > [class*="Page"] {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 760px) {
+  .main > [class*="Page"] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 760px) {
+  .main > [class*="Page"][class*="isGray"] {
+    background: #EDEDED;
+    padding: 50px;
+    border-radius: 30px;
+  }
+}
+
+.main > [class*="Page"] > [class*="pageHeader"] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 420px) {
+  .main > [class*="Page"] > [class*="pageHeader"] > h1 {
+    font-size: 20pt;
+  }
+}
+
+.main > [class*="Page"] > [class*="pageHeader"] > [class*="pageNav"] {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+@media (min-width: 760px) {
+  .main > [class*="Page"] > [class*="pageHeader"] > [class*="pageNav"][class*="hideOnDesktop"] {
+    display: none;
+  }
+}
+
+.main > [class*="Page"] > [class*="pageHeader"] [class*="NavButton"] > svg {
+  stroke: #fff;
+}
+
+.main > [class*="Page"] > [class*="pageHeader"] > [class*="NavButton"] {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+}
+
+.main > [class*="Page"] > [class*="pageHeader"] > [class*="pageNav"] > [class*="NavButton"] {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+}
+
+/* Notifications */
+.notificationsWrapper {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 300px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.notificationsWrapper[class*="isLeftAligned"] {
+  right: unset;
+  left: 50px;
+}
+
+.notification {
+  background: rgba(0, 0, 0, .7);
+  backdrop-filter: blur(10px);
+  padding: 10px 15px 15px;
+  color: #fff;
+  border-radius: 12px;
+  opacity: 0;
+  animation: notification-reveal .21s 1 ease-in-out forwards,
+  notification-hide .21s 1 ease-in-out forwards 5s;
+}
+
+@keyframes notification-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes notification-hide {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.notification:not(:first-child) {
+  margin-top: 10px;
+}
+
+.notificationTitle {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.notificationContents {
+  margin-top: 5px;
+  font-size: 14pt;
+  font-weight: 500;
+}

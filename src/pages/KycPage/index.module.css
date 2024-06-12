@@ -1,0 +1,11 @@
+.KycPage {
+
+}
+
+.kycForm {
+  max-width: 800px;
+}
+
+.kycForm [class*="form-label"] {
+  font-weight: bold;
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Actay Wide';
+    src: url('ActayWide-Bold.woff2') format('woff2'),
+        url('ActayWide-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Actay Condensed';
+    src: url('ActayCondensed-ThinItalic.woff2') format('woff2'),
+        url('ActayCondensed-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Actay Condensed';
+    src: url('ActayCondensed-Thin.woff2') format('woff2'),
+        url('ActayCondensed-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Actay';
+    src: url('Actay-Regular.woff2') format('woff2'),
+        url('Actay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Actay Wide';
+    src: url('ActayWide-BoldItalic.woff2') format('woff2'),
+        url('ActayWide-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Actay';
+    src: url('Actay-RegularItalic.woff2') format('woff2'),
+        url('Actay-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

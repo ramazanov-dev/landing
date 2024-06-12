@@ -1,0 +1,54 @@
+{
+  "name": "one-satoshi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "biome check . && dprint check && typos && ls-lint && tsc"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.40.1",
+    "@types/luxon": "^3.4.2",
+    "classnames": "^2.5.1",
+    "country-codes-list": "^1.6.11",
+    "decimal.js-light": "^2.5.1",
+    "luxon": "^3.4.4",
+    "mobx": "^6.12.3",
+    "mobx-persist-store": "^1.1.5",
+    "mobx-react-lite": "^4.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-imask": "^7.6.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@evilmartians/lefthook": "^1.6.15",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "biome-rs-npm": "dalisoft/biome-rs-npm#v1.8.0",
+    "commitlint-rs-npm": "dalisoft/commitlint-rs-npm#v0.1.11",
+    "dprint": "^0.46.1",
+    "ls-lint-go-npm": "dalisoft/ls-lint-go-npm#v2.2.3",
+    "typescript": "^5.4.5",
+    "typos-rs-npm": "dalisoft/typos-rs-npm",
+    "vite": "^5.2.13",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "trustedDependencies": [
+    "@evilmartians/lefthook",
+    "biome-rs-npm",
+    "commitlint-rs-npm",
+    "core-js-pure",
+    "dprint",
+    "esbuild",
+    "ls-lint-go-npm",
+    "typos-rs-npm"
+  ],
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

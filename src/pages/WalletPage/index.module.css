@@ -1,0 +1,28 @@
+.WalletPage {
+
+}
+
+.tableCurrency {
+  display: flex;
+  align-items: center;
+  gap: 10px 12px;
+}
+
+.tableCurrency > img {
+  width: 30px;
+}
+
+.tableCurrency > span {
+  display: block;
+  font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  .tableCurrency > img {
+    width: 40px;
+  }
+
+  .tableCurrency > span {
+    font-size: 18pt;
+  }
+}

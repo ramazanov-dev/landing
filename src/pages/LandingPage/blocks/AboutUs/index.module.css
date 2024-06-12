@@ -1,0 +1,64 @@
+.AboutUsBlock {
+  padding: 100px 20px;
+  background-color: EDEDED;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 65px;
+  justify-content: center;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.textContainer {
+  max-width: 50%;
+}
+
+@media (max-width: 1120px) {
+  .textContainer {
+    max-width: 100%;
+  }
+}
+
+.textContainer > p {
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.container > img.desktopBackground {
+  max-width: 550px;
+}
+
+@media (max-width: 1120px) {
+  .container > img.desktopBackground {
+    width: 100%;
+    margin-top: 20px;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  .container > img.desktopBackground {
+    display: none;
+  }
+}
+
+.container > img.mobileBackground {
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .container > img.mobileBackground {
+    display: none;
+  }
+}

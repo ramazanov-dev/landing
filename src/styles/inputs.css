@@ -1,0 +1,206 @@
+input,
+button,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  appearance: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  padding: 15px;
+  background: transparent;
+  transition: .21s;
+  font: inherit;
+  border-radius: 12px;
+  font-weight: 500;
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  input,
+  button,
+  textarea,
+  select {
+    padding: 10px 15px;
+  }
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+  border-color: #000;
+}
+
+input[type="text"].isGray,
+input[type="email"].isGray,
+input[type="number"].isGray,
+input[type="password"].isGray,
+select.isGray {
+  border-color: #959595;
+  background: #D7D6D6;
+}
+
+@media (min-width: 760px) {
+  input[type="text"].isGrayOnDesktop,
+  input[type="email"].isGrayOnDesktop,
+  input[type="number"].isGrayOnDesktop,
+  input[type="password"].isGrayOnDesktop,
+  select.isGray {
+    border-color: #959595;
+    background: #D7D6D6;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 20px;
+}
+
+button > svg {
+  stroke: #fff;
+  transform: translateY(-2px);
+  width: 16px;
+}
+
+button.isBrown {
+  background: #C0976B;
+}
+
+button[disabled].isBrown {
+  background: #e9c7a1;
+}
+
+button.isWhite {
+  background: #fff;
+  color: #000;
+}
+
+button.isWhite svg {
+  stroke: #000;
+}
+
+button[disabled].isWhite {
+  background: #d4d4d4;
+}
+
+button.isDarkBlue {
+  background: #1E2635;
+}
+
+button[disabled].isDarkBlue {
+  background: #394051;
+}
+
+button.isBlack {
+  background: #000;
+}
+
+button.isGreen {
+  background: #42D10F;
+}
+
+button.isDuctile {
+  width: fit-content;
+  flex: unset;
+}
+
+button.isNarrow {
+  padding: 15px;
+}
+
+button.isZeroed {
+  width: auto;
+  flex: unset;
+  padding: 15px 0;
+  color: #000;
+  text-decoration: underline;
+  border-radius: 0;
+}
+
+button:disabled, select:disabled {
+  cursor: default;
+}
+
+button.isZeroed:disabled {
+  text-decoration: none;
+  opacity: .65;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Fields wrapper */
+.fields-wrapper {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 1;
+  min-width: 200px;
+}
+
+.fields-wrapper.__hasAfterContents {
+  position: relative;
+}
+
+.fields-wrapper.__hasAfterContents > div:last-child {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  content: "";
+  display: block;
+  width: auto;
+  height: auto;
+  transform: translateY(-50%);
+}
+
+.fields-wrapper.__hasAfterContents > div:last-child svg {
+  width: 24px;
+}
+
+/* Form label */
+.form-label {
+  font-size: 18pt;
+  font-weight: 500;
+  width: 100%;
+}
+
+.form-label + .fields-wrapper {
+  margin-top: -10px;
+}
+
+/* Form tips */
+.form-small-tip {
+  margin-top: -5px;
+  font-size: 18pt;
+}

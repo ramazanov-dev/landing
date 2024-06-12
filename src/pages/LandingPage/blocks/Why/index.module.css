@@ -1,0 +1,85 @@
+.WhyBlock {
+  padding: 65px 20px;
+  padding-bottom: 75px;
+  background-image: url("./assets/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1360px) {
+
+  .container {
+    max-width: 1000px;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  gap: 50px;
+}
+
+.infoBlockBottom {
+  margin-top: 60px;
+}
+
+
+@media (max-width: 660px) {
+
+  .infoBlockBottom {
+    margin-top: 0;
+  }
+}
+
+.infoContainer h1 {
+  margin-bottom: 70px;
+}
+
+.infoContainer > div {
+  flex: 1;
+}
+
+.infoContainer > div:last-child {
+
+}
+
+@media (max-width: 830px) {
+  .infoContainer > div:last-child {
+    display: none;
+  }
+}
+
+.infoContainer > div:last-child > img {
+  width: 70%;
+  height: auto;
+  margin: 0 auto
+}
+
+/* Misc container */
+
+.miscContainer {
+  margin-top: 20px;
+}
+
+.miscContainerInfoText {
+  font-size: 12pt
+}
+
+.miscContainer > a {
+  margin-top: 10px;
+  text-decoration: none !important;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 15px;
+  padding: 12px 35px;
+  display: block;
+  width: auto;
+  max-width: fit-content;
+}

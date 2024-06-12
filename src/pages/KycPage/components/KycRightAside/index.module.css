@@ -1,0 +1,97 @@
+.KycRightAside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: #131313;
+  color: #fff;
+  transition: .32s;
+}
+
+.KycRightAside[class*="isHidden"] {
+  transform: translateX(100%);
+}
+
+.closeButtonWrapper {
+  display: flex;
+  padding: 50px 30px;
+}
+
+@media (max-width: 760px) {
+  .closeButtonWrapper {
+    padding: 30px;
+  }
+}
+
+.closeButtonWrapper > div {
+  width: 40px;
+  margin-left: auto;
+}
+
+.closeButtonWrapper > div > svg {
+  stroke: #fff;
+}
+
+.asideHeader {
+  padding: 50px 30px 0;
+  font-weight: bold;
+  font-size: 32pt;
+}
+
+@media (max-width: 760px) {
+  .asideHeader {
+    padding: 30px;
+    padding-bottom: 0;
+  }
+}
+
+.stepsContainer {
+  padding: 50px 30px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.step:not(:first-child) {
+  margin-top: 20px;
+}
+
+.stepIcon {
+  width: 35px;
+  height: 35px;
+  background: #C0976B;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.step[class*="isPassed"] > .stepIcon {
+  background: #42D10F;
+}
+
+.stepIcon > svg {
+  stroke: #fff;
+  display: none;
+}
+
+.step[class*="isPassed"] > .stepIcon > svg {
+  display: block;
+}
+
+.stepContents {
+  font-size: 18pt;
+  color: #C0976B;
+  text-decoration: underline;
+}
+
+.stepContents a {
+  color: inherit;
+}
+
+.step[class*="isPassed"] > .stepContents {
+  color: #fff;
+  text-decoration: none;
+}

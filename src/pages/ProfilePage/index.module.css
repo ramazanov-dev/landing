@@ -1,0 +1,22 @@
+.ProfilePage {
+
+}
+
+.fullName {
+  font-size: 64pt;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .fullName {
+    font-size: 48pt;
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 760px) {
+  .fullName {
+    font-size: 32pt;
+  }
+}

@@ -1,0 +1,14 @@
+.TransactionsPage {
+  max-width: 1400px !important;
+}
+
+.tableIconedLink {
+  width: 45px;
+  height: 45px;
+  padding: 10px
+}
+
+.tableIconedLink > svg {
+  stroke: none;
+  fill: #fff
+}

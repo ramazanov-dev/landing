@@ -1,0 +1,11 @@
+[default]
+extend-ignore-re = [
+    "comission*",
+]
+
+[default.extend-identifiers]
+overridedName = "overridedName"
+
+[type.images]
+extend-glob = ["*.png", "*.jpg", "*.bmp"]
+check-file = false

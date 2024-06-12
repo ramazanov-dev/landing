@@ -1,0 +1,15 @@
+ls:
+  .ts: kebab-case
+  .tsx: camelCase
+  .d.ts: point.case
+  .js: kebab-case
+  .jsx: camelCase
+  .json: kebab-case
+  .yml: lowercase
+  .md: regex:[A-Z0-9]+
+
+ignore:
+  - "node_modules"
+  - tsconfig.node.json
+  - vite.config.ts
+  - src/vite-env.d.ts

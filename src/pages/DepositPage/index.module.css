@@ -1,0 +1,23 @@
+.DepositPage {
+  width: auto !important;
+  min-width: 600px;
+}
+
+@media (max-width: 760px) {
+  .DepositPage {
+    width: 100% !important;
+    min-width: unset;
+  }
+}
+
+.formWrapper {
+
+}
+
+@media (max-width: 760px) {
+  .formWrapper {
+    background: #EDEDED;
+    padding: 30px;
+    border-radius: 30px;
+  }
+}

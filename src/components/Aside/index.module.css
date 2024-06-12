@@ -1,0 +1,106 @@
+.Aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 130px;
+  flex-shrink: 0;
+  background: #131313;
+  height: 100%;
+  padding: 50px 20px;
+  overflow: auto;
+}
+
+@media (max-width: 760px) {
+  .Aside {
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    gap: 0;
+  }
+}
+
+.Aside > img {
+  width: 70px;
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  .Aside > img {
+    display: none;
+  }
+}
+
+.Aside > nav {
+  margin-top: auto;
+}
+
+.Aside > nav[class*="__mobile-footer"] {
+  display: none;
+}
+
+@media (max-width: 760px) {
+
+  /* Mobile footer nav */
+  .Aside > nav[class*="__mobile-footer"] {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .Aside > nav:not([class*="__mobile-footer"]) {
+    display: none;
+  }
+}
+
+.Aside > nav:first-of-type {
+  margin-top: 80px;
+}
+
+.NavButton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #2E2E2E;
+  padding: 15px;
+  border-radius: 15px;
+  transition: .21s;
+}
+
+@media (max-width: 760px) {
+  .NavButton {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+}
+
+.Aside .NavButton {
+  margin: auto;
+}
+
+.Aside .NavButton:not(:first-child) {
+  margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+  .Aside .NavButton:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+.NavButton[class*="active"] {
+  background: #C0976B;
+}
+
+.NavButton > svg {
+  stroke: #727272;
+  margin: auto;
+  transition: .21s;
+}
+
+.NavButton[class*="active"] > svg {
+  stroke: #fff;
+}

@@ -1,0 +1,103 @@
+.Table {
+
+}
+
+.desktopTable {
+
+}
+
+@media (max-width: 760px) {
+  .desktopTable {
+    display: none;
+  }
+}
+
+.desktopTableRow {
+  display: flex;
+}
+
+.desktopTableRow:not(:first-child) {
+  border-bottom: 1px solid #8D8D8D
+}
+
+/* Headers */
+.desktopTableRow:first-child {
+  position: sticky;
+  top: 0;
+  background: #dedede;
+  border-radius: 12px;
+}
+
+/* Cells */
+.desktopTableCell {
+  flex: 1;
+  padding: 20px;
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .desktopTableCell {
+    font-size: 14pt;
+  }
+}
+
+/* Headers cells */
+.desktopTableRow:first-child > .desktopTableCell {
+  font-weight: bold;
+  padding: 15px 20px;
+}
+
+/* Mobile table */
+.mobileTable {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .mobileTable {
+    display: block;
+  }
+}
+
+.mobileTableItem {
+  background: #ededed;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.mobileTableItem:not(:first-child) {
+  margin-top: 20px;
+}
+
+.mobileTableItemRows {
+
+}
+
+.mobileTableItemRows:not(:first-child) {
+  margin-top: 20px;
+}
+
+.mobileTableItemRowsItem {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 18pt;
+}
+
+.mobileTableItemRowsItem > span {
+  display: block;
+}
+
+
+.mobileTableItemRowsItem > span:first-child {
+  font-weight: bold;
+}
+
+.mobileTableItemRowsItem > span:last-child {
+  font-weight: 500;
+}
+
+.mobileTableItemFirstHeader {
+
+}

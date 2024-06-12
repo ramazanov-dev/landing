@@ -1,0 +1,105 @@
+.AccountSecurityPage {
+
+}
+
+.formWrapper {
+  display: flex;
+  gap: 30px 50px;
+}
+
+.formAct {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width: 760px) {
+  .formAct {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .formWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Password form */
+
+.PasswordForm {
+  flex: 1;
+}
+
+/* 2FA form */
+
+.TwoFAForm {
+  flex: 1;
+  font-weight: 500;
+}
+
+.tfaFormTitle {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.tfaFormDescription {
+  margin-top: 10px;
+}
+
+.tfaFormStep {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 18pt;
+}
+
+.appButtonsContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.appButtonsContainer > a {
+  display: block;
+}
+
+.appButtonsContainer > a > img {
+  width: auto;
+  height: 50px;
+}
+
+.qrCodeWrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.qrCodeContainer {
+  width: 120px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.qrCodeInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.qrCodeInfo > [class*="data-rows"] {
+  margin-top: auto;
+}
+
+.qrCodeInfo > [class*="data-rows"] > [class*="data-rows-item"] {
+
+}
+
+.qrCodeInfo > [class*="data-rows"] > [class*="data-rows-item"] > span {
+  font-size: inherit;
+}
+
+.qrCodeInfo > [class*="data-rows"] > [class*="data-rows-item"] > span:last-child {
+  font-weight: bold;
+}

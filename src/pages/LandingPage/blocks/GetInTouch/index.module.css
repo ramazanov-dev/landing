@@ -1,0 +1,43 @@
+.GetInTouch {
+  padding: 100px 20px;
+  background-image: url("./assets/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 440px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 65px;
+  justify-content: end;
+}
+
+@media (max-width: 460px) {
+  .container {
+    justify-content: center;
+  }
+
+  .GetInTouch {
+    padding: 70px 20px;
+  }
+}
+
+
+.infoBlocksContainer {
+  max-width: 300px;
+}
+
+.infoBlockWhite {
+  background: #fff;
+  color: black;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.infoBlockTitle {
+  font-size: 24px;
+}
